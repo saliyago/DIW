@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Práctica</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #555;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            color: pink;
+            font-family: 'Century Gothic', Arial, sans-serif;
+        }
+        h2, h3, h4, h5 {
+            color: #362C20;
+            font-family: 'Century Gothic', Arial, sans-serif;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #3d3d3d;
+        }
+        header h1 {
+            margin: 0;
+            padding: 0 20px;
+        }
+        nav {
+            background-color: #111;
+            overflow: hidden;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            padding: 10px 20px;
+        }
+        nav li:hover {
+            background-color: #444;
+        }
+                
+        .main-content {
+            background: url('background.jpg') no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding: 60px 0;
+        }
+        img{
+            width: 80%;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .left-sidebar, .content, .right-sidebar {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left-sidebar, .right-sidebar {
+            flex: 1;
+            margin: 10px;
+        }
+        .content {
+            flex: 2;
+            margin: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diseñar este documento usar HTML 5</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li>Noticias</li>
+            <li>Otra página</li>
+            <li>Otra más</li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <img src="image.jpg" alt="imagen">
+    </div>
+    <div class="container">
+        <div class="left-sidebar">
+            <h3>Noticias</h3>
+            <p>Este es un ejemplo de práctica</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <input type="date" id="birthday" name="birthday">
+
+            <h4>Links útiles para el curso</h4>
+            <ul>
+                <li><a href="#">w3c html 5.2</a></li>
+                <li><a href="#">w3c css 3</a></li>
+                <li><a href="#">mdn</a></li>
+                <li><a href="#">w3schools</a></li>
+            </ul>
+
+        </div>
+        <div class="content">
+            <h2>Debes crear una hoja de estilos para que tu página se parezca a esta:</h2>
+            <p>Pistas</p>
+            <ul>
+                <li><a href="#">w3c html 5.2</a></li>
+                <li><a href="#">w3c css 3</a></li>
+                <li><a href="#">mdn</a></li>
+                <li><a href="#">w3schools</a></li>
+            </ul>
+        </div>
+        <div class="right-sidebar">
+            <h3>Compatibilidad con navegadores</h3>
+            <ul>
+                <li>FireFox</li>
+                <li>Chrome</li>
+                <li>Edge</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+</body>
+</html>
